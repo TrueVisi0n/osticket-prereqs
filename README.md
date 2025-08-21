@@ -18,11 +18,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Apache/Litespeed/IIS Webserver
+- PHP version 8.0 or above
+- MySQL version 5.5 or above
+- Latest version of osTicket
+
+<h2>Recommended Install Links</h2>
+
+- [Latest version of osTicket](https://osticket.com/download)
+- PHP 8.2/8.1 for Windows Server: [Download](https://windows.php.net/download/)
+- MySQL 8.0 for Windows Server: [Download](https://dev.mysql.com/downloads/installer/)
+- PHP Manager 2 for IIS (makes managing PHP on IIS much easier): [Download](https://www.phpmanager.xyz/)
 
 <h2>Installation Steps</h2>
 
