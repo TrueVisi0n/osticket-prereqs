@@ -24,7 +24,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Recommended Install Links</h2>
 
-- [CourseCareers Information Technology](https://coursecareers.com/courses/it-intro-course) install files: [download](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD)
+- Install folder: [download](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD)
 
 <h2>Installation Steps</h2>
 
