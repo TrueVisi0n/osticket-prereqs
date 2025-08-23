@@ -85,12 +85,96 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 Use "Typical" setup, Launch Configuration Wizard, Select "Standard" configuration, **⚠️ Important: Set Username and Password to "root"**
 </p>
+
+<br />
+<p>
+8) Register PHP from within IIS by selecting "PHP Manager", then select "Register new PHP version", path to C:\PHP\php-cgi.exe
+</p>
 <br />
 
+<br />
 <p>
-8) Register PHP from within IIS 
+9) Install osTicket by unzipping "osTicket-v1.15.8.zip" and copy the "upload" folder into "C:\inetpub\wwwroot" 
+</p>
+<br />
+
+<br />
+<p>
+10) Rename "upload" to "osTicket" 
+</p>
+<br />
+
+<br />
+<p>
+11) Reload IIS by selecting "restart" on the webserver 
+</p>
+<br />
+
+<br />
+<p>
+12) In IIS navigate to [computer name] > Sites > Default Web Site > osTicket, select "PHP Manager", click "enable or disable an extension", enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll"
+</p>
+<br />
+
+<br />
+<p>
+13) Navigate to C:\inetpub\wwwroot\osTicket\include, rename "ost-sampleconfig.php" to "ost-config.php"
+</p>
+<br />
+
+<br />
+<p>
+14) In the properties of "ost-config.php", grant "IIS APPPOOL\osTicket" modify permissions
+</p>
+<br />
+
+<br />
+<p>
+15) From the "osTicket-Installation-Files", install "HeidiSQL_12.3.0.6589_Setup"
 </p>
 <p>
-<img src="https://imgur.com/TS5CbZN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/k2428SI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<br />
+<p>
+16) In HeidiSQL, select "new", set User and Password to "root", select "open"
+</p>
+<br />
+
+<br />
+<p>
+17) Right-click "Unnamed", select "create new > database", name database "osTicket", hit "OK"
+</p>
+<br />
+
+<br />
+<p>
+17) Right-click "Unnamed", select "create new > database", name database "osTicket", hit "OK"
+</p>
+<br />
+
+<br />
+<p>
+18) In IIS navigate to [computer name] > Sites > Default Web Site > osTicket, select "Browse*.80"
+</p>
+<br />
+
+<br />
+<p>
+19) Finish the installation setup in osTicket. Hit "Install Now"
+<ul>
+Database Settings:
+<li>MySQL Database: osTicket</li>
+<li>MySQL Username: root</li>
+<li>MySQL Password: root</li>
+</ul>
+</p>
+<br />
+
+<br />
+<p>
+20) Navigate to C:\inetpub\wwwroot\osTicket\include, in the properties of "ost-config.php", switch "IIS APPPOOL\osTicket" permission from "modify" to "read"
 </p>
 <br />
